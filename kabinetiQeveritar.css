@@ -1,0 +1,16 @@
+.div1 {
+    background-color: lightgrey;
+    padding: 50px 50px;
+}
+div.div1 > h3 {
+    font-size: 30px;
+    margin: 0%;
+}
+div.div1 > p {
+    font-size: 20px;
+    margin: 0%;
+    color: goldenrod;
+}
+article {
+    width: 65%;
+}

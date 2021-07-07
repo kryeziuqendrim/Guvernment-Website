@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="foto/logo.png">
+    <title>Zyra e Kryeministrit të Kosovës</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <style>
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #EEEEEE;
+}
+
+i {
+    color: white;
+    padding: 0px 10px;
+    font-size: 22px !important;
+    
+}
+
+header{
+    background-image: url(./foto/ZKM-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: -1;
+    height: 600px;
+    opacity: 0.9;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.459);
+    height: 600px;
+}
+.col-logo{
+    padding: 20px 0px 10px 45px;
+    float: left;
+    /* clip-path: polygon(0 0, 11% 4%, 24% 0, 100% 0, 100% 100%, 0 100%, 0% 50%); */
+}
+.logo-before{
+    position: relative;
+    top: -5px;
+    left: 3px;
+    overflow: hidden;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    border-bottom: 1px solid white;
+}
+.right{
+ /* position: relative;
+ left: 59%; */
+ display: flex;
+ flex-direction: row;
+ justify-content: right;
+}
+.right1{
+    position: relative;
+    left: 61%;
+}
+a.zks {
+    color: white;
+    font: 300;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.headers{
+    height: 60px;
+    border-bottom: 1px solid white;
+}
+div.col-SocialMedia {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+div.language {
+    /* padding-right: 25px; */
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    padding-right: 35px;
+}
+nav {
+    height: 65px;
+    /* border-top: 1px solid white; */
+    border-bottom: 1px solid white;
+    display: flex;
+}
+nav > ul {
+    display: flex;
+    /* align-items: center; */
+}
+nav > ul > li {
+    list-style-type: none;
+    /* padding-left: 50px; */
+    display: flex;
+    justify-content: space-around;
+}
+nav > ul > li > a {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 25px 35px 10px;
+    transition: border-bottom 2s ease-in;
+    
+}
+nav > ul > li:nth-child(1) > a:hover {
+    border-bottom: 4px solid goldenrod;
+}
+nav > ul > li:nth-child(2) > a:hover {
+    border-bottom: 4px solid goldenrod;
+}
+
+nav > ul > li > a:hover {
+    color: lightgray;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.sub-nav1{
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    /* margin-top: 40px;
+    margin-left: 1100px; */
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    padding-left: 100px !important;
+}
+
+nav.navbar > ul > li:hover ul.sub-nav1 {
+    display: block;
+    background-color: white;
+    position: absolute;
+    top: 135px;
+    left: 0px;
+    /* margin-top: 40px;
+    margin-left: 1100px; */
+    padding: 15px;
+    width: 97.8%;
+    height: 50px;
+    z-index: 100;
+}
+nav > ul > li > ul.sub-nav1 > li {
+    display: inline-flex;
+    font-size: 20px;
+    padding: 15px 15px;
+}
+nav > ul > li > ul.sub-nav1 > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: black;
+    transition: color .3s;
+
+}nav > ul > li > ul.sub-nav1 > li > a:hover {
+    text-decoration: none;
+    color: goldenrod;
+    
+}
+
+
+.text-pos {
+    position: relative;
+    top: 145px;
+    padding-left: 45px;
+}
+
+.text-pos, h2{
+    color: white;
+    margin: 0px;
+    padding-top: 20px;
+}
+.titulli {
+    font-size: 42px;
+    width: 52%;
+}
+.text-pos > .text > a {
+    text-decoration: none;
+    transform: color 2s;
+}
+.text-pos > .text > a > h2:hover {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+#search{
+    background-color: transparent;
+    border: 0px;
+    color: white;
+}
+.searchDiv{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 290px;
+}
+#search:checked{
+    background-color: transparent;
+    border: 0px;
+}
+
+#search::placeholder{
+    color: white;
+    font-size: 15px;
+    text-align: end;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    background-color: #EEEEEE;
+    padding: 30px;
+}
+
+
+.card1, .card2, .card3 {
+    background-color: white;
+
+}
+
+.img-top {
+    
+}
+img {
+    max-width: 100%;
+}
+.card-body 
+{
+    font-size: 24px;
+    margin-top: 20px;
+}
+div.card-body > h3 {
+    padding: 0px 20px 20px 20px;
+    margin: 0px;
+    color: rgba(37, 37, 37, 0.89);
+}
+div.card-body > span {
+    padding: 0px 20px;
+    font-size: 15px;
+    color: rgb(156, 156, 156);
+}
+
+@media only screen and (max-width: 500px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 100% ;
+        grid-gap: 30px;
+        background-color: #EEEEEE;
+        padding: 30px;
+     }
+     nav.navbar{
+         display: none;
+     }
+     .right{
+         display: flex;
+     }
+     h2.titulli {
+         font-size: 18px !important;
+     }
+}
+
+@media only screen and (max-width: 768px) {
+    div.card-body > h3 {
+        font-size: 17px;
+        color: gray;
+    }
+    div.card-body > span {
+        font-size: 14px;
+        color: gray;
+    }
+     nav.navbar{
+         display: none;
+     }
+     .right{
+         display: none;
+     }
+     div.text > a > h2 {
+         font-size: 30px;
+     }
+     div.text-pos {
+         position: relative;
+         top: 170px;
+     }
+     header{
+         height: 500px;
+     }
+     div.container {
+         height: 500px;
+     }
+     section.media{
+        display: grid;
+        grid-template-columns: 100% !important;
+        /* grid-template-columns: 50% 50%; */
+        background-color: #EEEEEE;
+        
+    }
+     
+}
+
+section.media{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-columns: 50% 50%; */
+    background-color: #EEEEEE;
+    
+}
+
+.facebook1 {
+    padding: 15px 30px;
+    display: block;
+    margin: 25px;
+    background-color: white;
+}
+.tiwtter1{
+    display: block;
+    margin: 25px;
+    padding: 25px;
+    background-color: white;
+}
+
+.top, .emri{
+    display: inline-block;
+}
+.top {
+    border: 1px solid black;
+}
+.na-ndiqni{
+    border: 1px solid gray;
+    background-color: lightgray;
+    z-index: -5;
+}
+div.emri > span.na-ndiqni > a {
+    text-decoration: none;
+    color:black;
+}
+div.emri > h3 {
+    color: blue;
+    margin-top: 0px;
+    margin: 10px 0px;
+}
+
+div.fotoDiv{
+    background-color: white !important;
+}
+div.fbDiv{
+    margin-top: 7px;
+    padding: 15px;
+}
+
+div.fbDiv > h5 {
+    color: black;
+    position: relative;
+    top: -25px !important;
+    display: inline-block;
+    margin: 0%;
+}
+div.fbDiv > p {
+    color: rgba(128, 128, 128, 0.801);
+    position: relative;
+    top: -10px;
+    left: -70px !important;
+    display: inline-block;
+    margin: 0%;
+    font-size: 12px;
+    
+}
+div.fbDiv > span > i {
+    position: relative;
+    top: 15px;
+    color: blue;
+    float: right;
+}
+
+div.twDiv{
+    margin-top: 1px;
+    padding: 15px;
+}
+div.twDiv:hover{
+    background-color: rgba(228, 228, 228, 0.562);
+}
+
+div.twDiv > span > i {
+    position: relative;
+    top: -75px;
+    color: gray;
+    top: -75px;
+    float: right;
+}
+div.twDiv:hover > span > i {
+    color: lightskyblue !important;
+}
+div.twDiv > h5 {
+    color: black;
+    position: relative;
+    top: -25px !important;
+    display: inline-block;
+    margin: 0%;
+}
+div.twDiv > p.User {
+    color: rgba(128, 128, 128, 0.801);
+    position: relative;
+    top: -10px;
+    left: -70px !important;
+    display: inline-block;
+    margin: 0%;
+    font-size: 12px;
+    
+}
+div.twDiv > h4 {
+    margin: 0px;
+    font-size: 26px;
+    font-weight: 400;
+}
+.imgD{
+    display: inline-block;
+    position: relative;
+    top: -15px;
+}
+
+.topT{
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+.topD{
+    display: inline-block;
+    
+}
+div.topT > h2 {
+    color: black;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 400;
+}
+p.twitterP{
+    font-size: 14px !important;
+    position: relative !important;
+    left: 60px;
+    top: -15px;
+    color: gray;
+    width: 50%;
+}
+.imgLove{
+    
+    padding-left: 15px;
+}
+.div1{
+    background-color: lightgrey;
+    overflow: hidden;
+    overflow-y: scroll; height: 500px;
+}
+.div2{
+    background-color: white;
+    z-index: 2;
+    /* padding: 25px; */
+    width: 98%;
+    position: relative;
+    left: 7px;
+    /* top: 7px; */
+   
+}
+
+.footerDiv .footerDiv2{
+    /* display: grid;
+    grid-template-columns: 50% 50%; */
+    padding: 25px;
+}
+.footerDiv{
+    display: inline-block;
+    float: left;
+    padding: 0px 25px;
+    color: rgb(107, 107, 107);
+}
+.footerDiv2{
+    display: inline-block;
+    float: right;
+    color: rgb(107, 107, 107);
+    text-transform: uppercase;
+    border-top: 1px solid rgb(203, 203, 203) !important;
+    border-bottom: 1px solid rgb(203, 203, 203) !important;
+}
+.plan, .plan1 {
+    display: inline-block;
+    width: 50%;
+    font-size: 15px;
+    position: relative;
+    top: -10px;
+}
+.fa-chevron-right{
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    left: -10px;
+}
+.left-line{
+    width: calc(100% + 40px);
+    height: 1px;
+    display: block;
+    background-color: #dbdbdb;
+    top: 50%;
+    position: relative;
+}
+.right-line{
+    width: calc(100% + 40px);
+    height: 1px;
+    display: block;
+    background-color: #dbdbdb;
+    top: 50%;
+    position: relative;
+
+}
+.rksfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.d1, .d2, .d3 {
+    display: inline-block;
+    width: 33%;
+    color: rgb(107, 107, 107);
+}
+.d2{
+    position: relative;
+    top: -50px;
+    left: 30px;
+}
+    </style>
+</head>
+  <body>
+
+
+      <header>
+
+        <div class="container">
+            <div class="row1">
+                <div class="col-logo">
+                    <a href="index.html" class="zks"><img src="./foto/logo.png" alt="" style="padding-right: 10px;">Zyra e Kryeministrit</a>
+                    
+                </div>
+                <div class="right">
+                    <div class="col-SocialMedia righ">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter " aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play " aria-hidden="true"></i></a>
+                    </div>
+                    <div class="language righ">
+                        <h5>SQ</h5>
+                        <h5>&nbsp; - &nbsp;</h5>
+                        <h5>EN</h5>
+                        <h5>&nbsp; - &nbsp;</h5>
+                        <h5>SR</h5>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="#">Kryeministri</a><div class="viza"></div>
+                            <ul class="sub-nav1">
+                                <li><a href="kryeministri.html">Kabineti Qeveritar</a></li>
+                                <li><a href="">Agjenda</a></li>
+                                <li><a href="">Intervista</a></li>
+                                <li><a href="">Shkruaj Kryeministrit</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                        <a href="#">Zyra e Kryeministrit</a>
+                        <ul class="sub-nav1">
+                            <li><a href="kryeministri.html">Sekretari i Pergjithshem</a></li>
+                            <li><a href="">Zyrat</a></li>
+                            <li><a href="">Agjencit</a></li>
+                            <li><a href="">Komisionet</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="lajmet.html">Lajme</a>
+                    </li>
+                    <li>
+                        <a href="#">Dokumente</a>
+                    </li>
+                    <li>
+                        <a href="#">Kontakti</a>
+                    </li>
+                    
+                </ul>
+                <div class="searchDiv">
+                    <input type="search" name="search" id="search" placeholder="Kerko në uebfaqe">
+                    <i class="fa fa-search" style="display: flex; align-items: center; padding: 0%;"></i>
+                    
+                </div>
+                    
+            </nav>
+
+            <div class="row text-pos">
+                <div class="text">
+                    <span>02.06.2021</span>
+                    <a href=""><h2 class="titulli" >Kryeministri i Republikës së Kosovës, Albin Kurti, u prit në takim nga Presidenti i Francës, Emmanuel Macron</h2></a>
+                </div>
+            </div>
+
+        </div>
+
+      </header>
+    <section class="cards">
+        <div class="card1">
+            <div class="img-top">
+              <img src="foto/ZKM_Card1.jpg" alt="" >
+            </div>
+            <div class="card-body">
+                <span>02.07.2021</span>
+                <h3>Kryeministri Kurti takoi përfaqësuesit e lartë të ShBA-së, Philip Reeker dhe Matthew Palmer</h3>
+                
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="img-top">
+              <img src="foto/ZKM_Card2.jpg" alt="" >
+            </div>
+            <div class="card-body">
+                <span>02.07.2021</span>
+                <h3>Kryeministri Kurti në Forumin e Prespës: Duhet të ketë sinkronizim të plotë të Brukselit dhe Washingtonit</h3>
+                
+            </div>
+        </div>
+
+        <div class="card3">
+            <div class="img-top">
+              <img src="foto/ZKM_Card3.jpg" alt="" >
+            </div>
+            <div class="card-body">
+                <span>02.07.2021</span>
+                <h3>Kryeministri Kurti priti në takim Sekretarin e Përgjithshëm të NATO-s, Jens Stoltenberg</h3>
+                
+                
+            </div>
+        </div>
+      </section>
+
+      <section class="media">
+        <div class="facebook1">
+            <div style="background-color: white; padding: 10px;">
+                <div class="top">
+                    <img src="foto/Albin-Kurti.jpg" alt="">
+                </div>
+                <div class="emri">
+                    <h3>Albin Kurti</h3>
+                    <span class="na-ndiqni"><a href=""><i style="color: blue; font-size: 16px !important;" class="fa fa-facebook" aria-hidden="true"></i>Like Page</a></span><span> &nbsp; 425K likes</span>
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <div class="fbDiv">
+                        <img src="foto/Albin-Kurti.jpg" alt="" style="border-radius: 50px; border: 1px solid gray;">
+                        <h5>Albin Kurti</h5>
+                        <p>4 horse ago</p>
+                        <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                        
+                    </div>
+                    <div class="postf">
+                        <p style="display: block; margin: 0px; padding:0px 10px 10px 10px;">Idetë dhe idealet më fisnike, besimi në liri, barazi dhe të drejta individuale, përfshirë të drejtën e çdo personi për të kërkuar lumturinë – që burojnë nga Deklarata e Pavarësisë së ShBA-ve, vazhdojnë të frymëzojnë popuj e individë anembanë botës.
+    
+                            Në këtë ditë të pavarësisë së Shteteve të Bashkuara të Amerikës, shteti i Kosovës i bashkohet festës së popullit dhe institucioneve të ShBA-ve, partnerë dhe aleatë të pazëvendësueshëm në arritjet tona.
+                            
+                            Gëzuar 4 Korrikun!</p>
+                            <img width="40%" height="260px" src="https://scontent.fprn4-1.fna.fbcdn.net/v/t1.6435-0/p417x417/210645371_1164302814069601_3656041675036255997_n.jpg?_nc_cat=1&ccb=1-3&_nc_sid=110474&_nc_ohc=J5pGy7IdPBAAX8mwYL5&_nc_ht=scontent.fprn4-1.fna&tp=6&oh=f57f969e13cf72195af4ad9ccd58a4c3&oe=60E6F6EC" alt="">
+                            <img class="" height="260px" src="https://scontent.fprn4-1.fna.fbcdn.net/v/t1.6435-0/s370x247/209165545_1164302820736267_3244445707250959066_n.jpg?_nc_cat=1&ccb=1-3&_nc_sid=110474&_nc_ohc=Wc_1aJs5oP0AX-EUD_p&_nc_ht=scontent.fprn4-1.fna&tp=7&oh=a0cbedacea54ed9b9304b8339873ff93&oe=60E7AD76" alt="">
+                            <img class="" src="https://scontent.fprn4-1.fna.fbcdn.net/v/t1.6435-0/s370x247/213070689_1164302854069597_4680396227255736863_n.jpg?_nc_cat=1&ccb=1-3&_nc_sid=110474&_nc_ohc=nzMVWAJYDtwAX-xWM1L&_nc_ht=scontent.fprn4-1.fna&tp=7&oh=0bd3ba550cda0701c35871cf7371fa05&oe=60E5D340" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="tiwtter1">
+            <div class="topT">
+                <h2 class="topD">Tweets</h2>
+                <p class="topD">by</p>
+                <a class="topD" href="#">@albinkurti</a>
+                <i style="color: gray; float: right; padding-top: 15px;" class="fa fa-info topD"></i>
+            </div>
+            <div style="background-color: white;">
+                <div class="twDiv">
+                    <img src="foto/Albin-Kurti.jpg" alt="" style="border-radius: 50px; border: 1px solid gray;">
+                    <h5>Albin Kurti</h5>
+                    <p class="User">@albinkurti</p>
+                    <br>
+                    <p class="twitterP">Replying to @albinkurti</p>
+                    <span><i class="fa fa-twitter" aria-hidden="true" style="color: gray;"></i></span>
+                    <h4>To renew our transatlantic alliance I suggested synchronization of #Washington and #Brussels in the WB while we work on three goals. 
+                        <br>1. Democratization by strengthening rule of law. 
+                        <br>2. Security through NATO membership. 
+                        <br>3. The unity of Europe through WB membership of the EU.</h4>
+                        <br>
+                        <img class="imgLove" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20class%3D%22icon%22%20fill%3D%22%23657786%22%20d%3D%22M12%2021.638h-.014C9.403%2021.59%201.95%2014.856%201.95%208.478c0-3.064%202.525-5.754%205.403-5.754%202.29%200%203.83%201.58%204.646%202.73.813-1.148%202.353-2.73%204.644-2.73%202.88%200%205.404%202.69%205.404%205.755%200%206.375-7.454%2013.11-10.037%2013.156H12zM7.354%204.225c-2.08%200-3.903%201.988-3.903%204.255%200%205.74%207.035%2011.596%208.55%2011.658%201.52-.062%208.55-5.917%208.55-11.658%200-2.267-1.822-4.255-3.902-4.255-2.528%200-3.94%202.936-3.952%202.965-.23.562-1.156.562-1.387%200-.015-.03-1.426-2.965-3.955-2.965z%22%2F%3E%3C%2Fsvg%3E" alt="">
+                        <img class="imgLove" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20class%3D%22icon%22%20fill%3D%22%23657786%22%20d%3D%22M21.78%2011.47l-5.14-5.14c-.292-.292-.767-.292-1.06%200s-.293.77%200%201.062l3.858%203.858H8.918c-.415%200-.75.336-.75.75s.335.75.75.75h10.52l-3.857%203.858c-.29.293-.29.768%200%201.06.148.147.34.22.53.22s.386-.072.53-.22l5.14-5.138c.294-.293.294-.767%200-1.06z%22%2F%3E%3Cpath%20class%3D%22icon%22%20fill%3D%22%23657786%22%20d%3D%22M9.944%2020.5H4.292c-.437%200-.792-.355-.792-.792V4.292c0-.437.355-.792.792-.792h5.652c.414%200%20.75-.336.75-.75S10.358%202%209.944%202H4.292C3.028%202%202%203.028%202%204.292v15.416C2%2020.972%203.028%2022%204.292%2022h5.652c.414%200%20.75-.336.75-.75s-.336-.75-.75-.75z%22%2F%3E%3C%2Fsvg%3E" alt="">
+                        <p style="float: right; color: gray;">Jun 2, 2021</p>
+                </div>
+         </div>
+      </section>
+
+      <footer>
+          <hr>
+            <br>
+            <br><br>
+          <div class="footerDiv">
+            <h4>PRANO TË REJAT NGA ZYRA E KRYEMINISTRIT</h4>
+            <input type="search" name="" id=""><input type="submit" value="Dergo">
+          </div>
+          
+          <div class="footerDiv2">
+                <div style="display: inline-block; width: 300px;" class="plana">
+                    <img src="https://kryeministri.rks-gov.net/front/inc/images/doc.svg" alt="">
+                    <h6 class="plan">Programi i Qeverisë së Kosovës 2021-2025</h6>
+                    <i class="fa fa-chevron-right" style="color: gray;"></i>
+                </div>
+                <div style="display: inline-block; width: 345px;" class="plana1">
+                    <img src="https://kryeministri.rks-gov.net/front/inc/images/platform-img.png" alt="">
+                    <h6 class="plan1">PLATFORMA E KONSULTIMEVE PUBLIKE MERR PJESË!</h6>
+                    <i class="fa fa-chevron-right" style="color: gray;"></i>
+                </div>
+               
+            </div>
+
+            <div class="rksfooter" style="padding: 30px;">
+                <span class="left-line"></span>
+                <img src="https://kryeministri.rks-gov.net/front/inc/images/gray-logo.svg" alt="">
+                <span class="right-line"></span>
+            </div>
+            
+            <div style="display: inline-block; padding: 10px;">
+                <div class="d1">
+                    <h3 style="font-weight: 300;">OBJEKTIVAT</h3>
+                    <ul>
+                        <li>Qeverisja e mirë, transparente dhe në shërbim të qytetarëve të Kosovës</li>
+                        <li>Sundim i rendit dhe ligjit</li>
+                        <li>Ekonomi të zhvilluar dhe modernizim të shtetit</li>
+                        <li>Arsim cilësor me aftësi konkurruese në tregun e BE-së</li>
+                        <li>Integrime Euro-Atlantike, anëtarësim në OKB dhe NATO</li>
+                        <li>Ushtri moderne sipas modelit të NATO-s</li>
+
+                    </ul>
+                </div>
+                <div class="d2">
+                    <h3 style="font-weight: 300;">VEGEZA</h3>
+                    <ul>
+                        <li>Presidenca e Republikës së Kosovës</li>
+                        <li>Kuvendi i Republikës së Kosovës</li>
+                        <li>Portali Qeveritar</li>
+                        <li>Gazeta Zyrtare</li>
+
+                    </ul>
+                </div>
+                <div class="d3">
+                    <h3 style="font-weight: 300;">KONTAKTI</h3>
+                    <ul>
+                        <li>Qeverisja e mirë, transparente dhe në shërbim të qytetarëve të Kosovës;</li>
+                        <li>Sundim i rendit dhe ligjit;</li>
+                        <li>Ekonomi të zhvilluar dhe modernizim të shtetit;</li>
+                        <li>Arsim cilësor me aftësi konkurruese në tregun e BE-së;</li>
+                        <li>Integrime Euro-Atlantike, anëtarësim në OKB dhe NATO;</li>
+                        <li>Ushtri moderne sipas modelit të NATO-s;</li>
+
+                    </ul>
+                </div>
+            </div>
+      </footer>
+
+      
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
